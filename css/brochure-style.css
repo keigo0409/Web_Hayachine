@@ -117,22 +117,12 @@ html {
 }
 
 .form-item input[type="text"],
-.form-item select,
-.form-item textarea {
+.form-item input[type="email"] {
   display: block;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid var(--main-green);
   border-radius: 3px;
-}
-
-.form-item textarea {
-  overflow-y: scroll;
-  resize: vertical;
-}
-
-.form-item input[type="file"] {
-  display: block;
 }
 
 #contact-form button {
