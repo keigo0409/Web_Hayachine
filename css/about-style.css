@@ -6,11 +6,10 @@
 
 /* header */
 .site-header {
-  background-color: #0b7a3b; /* 緑 */
+  background-color: #007B3D;
   height: 90px;
 }
 
-/* 中央寄せ */
 .header-inner {
   max-width: 1200px;
   height: 100%;
@@ -22,7 +21,6 @@
   justify-content: space-between;
 }
 
-/* ロゴエリア */
 .logo-area {
   display: flex;
   align-items: center;
@@ -34,7 +32,7 @@
   width: 60px;
   height: 60px;
   object-fit: contain;
-  background-color: #fff; /* 仮ロゴ用 */
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -48,7 +46,7 @@
   font-size: 30px;
   font-weight: bold;
 }
-/* ナビ */
+
 .nav ul {
   display: flex;
   list-style: none;
