@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 | 早池峰設備工業</title>
+    <link rel="stylesheet" href="../css/faq-style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+      <div class="hero">
+        <img src="../img/faq_hero.jpg" alt="早池峰設備工業　外観">
+        <div class="hero-text">
+          <p>よくある質問</p>
+        </div>
+      </div>
+      <div class="main-content">
+        <section class="margin-bottom-2rem">
+          <h1 class="section-heading">よくある質問</h1>
+
+          <button class="faq-accordion-button">
+            <span class="faq-accordion-icon-question">Q</span>
+            <p class="faq-accordion-button-text">水道管が凍ってしまった場合は？</p>
+          </button>
+          <p class="faq-accordion-content">
+            <span class="faq-accordion-content-inner">
+              <span class="faq-accordion-icon-answer">A</span>
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            </span>
+          </p>
+
+          <button class="faq-accordion-button">
+            <span class="faq-accordion-icon-question">Q</span>
+            <p class="faq-accordion-button-text">対応地域はどこですか？</p>
+          </button>
+          <p class="faq-accordion-content">
+            <span class="faq-accordion-content-inner">
+              <span class="faq-accordion-icon-answer">A</span>
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            </span>
+          </p>
+
+          <button class="faq-accordion-button">
+            <span class="faq-accordion-icon-question">Q</span>
+            <p class="faq-accordion-button-text">工事期間の目安はどのくらいですか？</p>
+          </button>
+          <p class="faq-accordion-content">
+            <span class="faq-accordion-content-inner">
+              <span class="faq-accordion-icon-answer">A</span>
+              工事内容によりますが、家庭内の水道工事等は到着から数時間程度になります。
+            </span>
+          </p>
+
+          <button class="faq-accordion-button">
+            <span class="faq-accordion-icon-question">Q</span>
+            <p class="faq-accordion-button-text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </button>
+          <p class="faq-accordion-content">
+            <span class="faq-accordion-content-inner">
+              <span class="faq-accordion-icon-answer">A</span>
+              この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+            </span>
+          </p>
+        </section>
+
+        <section class="margin-bottom-2rem">
+          <p class="suggest-contact-text">その他ご不明点等ありましたらお気軽にお問い合わせください！</p>
+          <a href="#" class="primary-button">お問い合わせはこちら</a>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".faq-accordion-button");
+
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            const content = button.nextElementSibling;
+
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+              content.classList.remove("is-open");
+              button.classList.remove("is-open");
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+              content.classList.add("is-open");
+              button.classList.add("is-open");
+            }
+          });
+        });
+      });
+    </script>
+</body>
+</html>
