@@ -35,7 +35,10 @@
 .hero-text p {
   font-size: 64px;
   font-weight: bold;
-  text-shadow: 3px 3px 0 #ffffff, -3px 3px 0 #ffffff, 3px -3px 0 #ffffff,
+  text-shadow:
+    3px 3px 0 #ffffff,
+    -3px 3px 0 #ffffff,
+    3px -3px 0 #ffffff,
     -3px -3px 0 #ffffff;
 }
 
@@ -68,62 +71,114 @@
   border-width: 20px 5px 0 20px;
 }
 
-.section-text {
-  font-size: 24px;
-  line-height: 1.5;
+.construction-card {
+  display: flex;
+  height: 550px;
+  margin: 20px 0px;
+  position: relative;
 }
 
-.section-auther {
-  margin: 48px 0px;
-  text-align: right;
-  font-size: 24px;
+.allow-change {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  left: 27%;
+  top: 20%;
+  width: 240px;
+  height: 240px;
 }
 
-/* 求人情報コンテナ */
-.recruitment-container {
-  border: 3px solid #007b3d;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 64px 0px;
+.construction-card-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0px;
 }
 
-.recruitment-table {
-  width: 80%;
-  font-size: 20px;
+.before-container {
+  margin-right: 20px;
+  width: 30%;
+  margin-top: auto;
+}
+
+.before-container img {
+  width: 100%;
+  height: 220px;
+  border-bottom: 3px solid #007b3d;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.before-text {
+  display: flex;
+  width: 90px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.before-text span {
+  color: #ffffff;
+}
+
+.card-info {
+  width: 100%;
+  height: 150px;
+  background-color: #f9f9f9;
+}
+
+.card-text {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.card-description {
+  width: 90%;
+  height: 60px;
   margin: auto;
 }
 
-table {
-  border-collapse: collapse;
+.after-container {
+  display: flex;
+  width: 70%;
+  justify-content: right;
+  position: relative;
 }
 
-.bold {
-  font-weight: bold;
+.after-container img {
+  width: 640px;
+  height: 450px;
 }
 
-.recruitment-table th {
-  width: 20%;
-  padding: 24px 12px;
-  text-align: left;
-  font-weight: normal;
-  border-bottom: 1px solid #007b3d;
+.after-text {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #007b3d;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.recruitment-table td {
-  width: 40%;
-  text-align: left;
-  border-bottom: 1px solid #8cbb9e;
-  padding: 24px 12px;
+.after-text span {
+  font-size: 20px;
+  color: #ffffff;
 }
 
-.line {
-  display: block;
+hr {
+  border: 1px dashed #8cbb9e;
 }
 
-.recruitment-table .border-none {
-  border-bottom: none;
-}
-
+/* link */
 .recruitment-link {
   display: flex;
   position: relative;
@@ -161,39 +216,4 @@ table {
   border-radius: 50px;
   align-items: center;
   justify-content: center;
-}
-/* 求人情報カード */
-
-.recruitment-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 64px;
-  margin: 84px 0px;
-}
-
-.recruitment-card {
-  border: 1px solid #000000;
-  background-color: #d9d9d9;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.recruitment-card img {
-  display: block;
-  width: 100%;
-}
-
-.recruitment-card-text {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.recruitment-card-text p {
-  font-size: 20px;
-  margin: 0 0 12px 0;
-}
-
-.recruitment-card-text .center {
-  font-size: 32px;
-  text-align: center;
 }
