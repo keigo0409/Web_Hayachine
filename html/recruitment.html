@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/header-style.css">
-    <link rel="stylesheet" href="../css/recruitment-style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>採用情報 | 早池峰設備工業</title>
+    <link rel="stylesheet" href="../css/recruitment-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
 <body>
   <header class="site-header">
     <div class="header-inner">
@@ -138,6 +141,31 @@
             </div>
         </div>
     </div>
+    <!-- モーダル -->
+    <!-- モーダル（bodyの閉じタグ直前に追加） -->
+    <div class="modal" id="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+          <div class="modal-left">
+            <img src="" alt="" class="modal-img" />
+          </div>
+          <div class="modal-right">
+            <p class="modal-year"></p>
+            <div class="modal-name-box">
+              <p class="modal-subtitle"></p>
+              <p class="modal-name"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-description"></div>
+      </div>
+      <!-- 左右の矢印 -->
+      <button class="modal-arrow modal-prev">&#10094;</button>
+      <button class="modal-arrow modal-next">&#10095;</button>
+    </div>
     <footer></footer>
-</body>
+    <script src="../js/rectuitment.js"></script>
+  </body>
 </html>
