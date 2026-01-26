@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* header */
 .site-header {
   background-color: #007B3D;
