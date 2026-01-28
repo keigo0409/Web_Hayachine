@@ -137,13 +137,22 @@ html {
   resize: vertical;
 }
 
-.form-item input[type="file"] {
-  display: block;
+.form-item input[type="file"]::file-selector-button {
+  font-size: 1rem;
+  background-color: var(--shadow-green);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 100vmax;
+}
+
+.form-item input[type="file"]::file-selector-button:hover {
+  background-color: var(--main-green);
+  color: white;
 }
 
 #contact-form button {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 2rem;
   margin: 0 auto;
   background-color: var(--main-green);
   color: white;
@@ -151,7 +160,6 @@ html {
   border: none;
   border-radius: 100vmax;
   box-shadow: 0 5px var(--shadow-green);
-
 }
 
 #contact-form button:hover {
