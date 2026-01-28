@@ -35,11 +35,12 @@
   justify-content: space-between;
 }
 
-.logo-area {
+.logo-area a {
   display: flex;
   align-items: center;
   gap: 12px;
   color: #fff;
+  text-decoration: none;
 }
 
 .logo {
@@ -71,7 +72,6 @@
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid white;
 }
 
 .nav a {
@@ -85,126 +85,125 @@
   border-bottom: 2px solid white;
 }
 
-/* header hamberger */
+/* header hamburger */
 @media screen and (max-width:750px) {
   #menu-btn {
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 20;
-        cursor: pointer;
-        transition: 0.5s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    cursor: pointer;
+    transition: 0.5s;
 
-        height: 50px;
-        width: 50px;
+    height: 50px;
+    width: 50px;
 
-        top: 20px;
-        right: 20px;
-    }
+    top: 20px;
+    right: 20px;
+  }
 
-    #menu-btn:hover {
-        transform: scale(1.1);
-    }
+  #menu-btn:hover {
+    transform: scale(1.1);
+  }
 
-    #menu-btn span {
-        height: 2px;
-        display: block;
-        position: relative;
-        transition: 0.3s;
-        width: 70%;
-        background: white;
-        border-radius: 100px;
-    }
+  #menu-btn span {
+    height: 2px;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    width: 70%;
+    background: white;
+    border-radius: 100px;
+  }
 
-    #menu-btn span::before,
-    #menu-btn span::after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        display: block;
-        position: absolute;
-        transition: 0.3s;
-        background: white;
-        border-radius: 100px;
-    }
+  #menu-btn span::before,
+  #menu-btn span::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    transition: 0.3s;
+    background: white;
+    border-radius: 100px;
+  }
 
-    #menu-btn span::before {
-        bottom: 12px;
-    }
+  #menu-btn span::before {
+    bottom: 12px;
+  }
 
-    #menu-btn span::after {
-        top: 12px;
-    }
+  #menu-btn span::after {
+    top: 12px;
+  }
 
-    #nav-menu.open {
-        right: 0;
-    }
+  #nav-menu.open {
+    right: 0;
+  }
 
-    #menu-btn.active span::before {
-        transform: rotate(45deg);
-        bottom: 0;
-    }
+  #menu-btn.active span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+  }
 
-    #menu-btn.active span {
-        background: rgba(0, 0, 0, 0);
-    }
+  #menu-btn.active span {
+    background: rgba(0, 0, 0, 0);
+  }
 
-    #menu-btn.active span::after {
-        transform: rotate(-45deg);
-        top: 0;
-    }
+  #menu-btn.active span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
 
+  #nav-menu {
+    height: 100%;
+    width: 250px;
+    background-color: var(--sub-green);
+    color: black;
+    border-left: 1px solid black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    z-index: 10;
+    transition: all 0.5s;
+  } @media screen and (max-width:500px) {
     #nav-menu {
-        height: 100%;
-        width: 250px;
-        background-color: var(--sub-green);
-        border-left: 1px solid black;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        right: -200%;
-        z-index: 10;
-        transition: all 0.5s;
-    } @media screen and (max-width:500px) {
-        #nav-menu {
-            width: 100%;
-        }
+      width: 100%;
     }
+  }
 
-    #nav-menu ul {
-        position: relative;
-        top: 30%;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-        gap: 0rem;
-    }
+  #nav-menu ul {
+    position: relative;
+    top: 30%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 0rem;
+  }
 
-    #nav-menu ul li {
-        list-style: none;
-        margin: 1rem 3rem;
-    }
+  #nav-menu ul li {
+    list-style: none;
+    margin: 1rem 3rem;
+  }
 
-    .nav .active {
-        color: black;
-        border-bottom: 2px solid black;
-    }
+  .nav .active {
+    color: black;
+  }
 
-    #nav-menu .current-page {
-        color: black;
-        font-style: italic;
-        font-weight: bold;
-    }
+  #nav-menu .current-page {
+    font-style: italic;
+    font-weight: bold;
+  }
 
-    #nav-menu a {
-        color: black;
-        text-decoration: none;
-    }
+  #nav-menu a {
+    color: black;
+    text-decoration: none;
+  }
 
-    #nav-menu a:hover {
-        border-bottom: 2px solid black;
-    }
+  #nav-menu a:hover {
+    border-bottom: 2px solid black;
+  }
 }
 
 /* footer */
