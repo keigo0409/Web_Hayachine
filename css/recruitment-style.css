@@ -511,13 +511,17 @@ table {
 }
 
 @media (max-width: 768px) {
-  .recruitment-card-container {
-    grid-template-columns: 1fr;
+  .recruitment-card {
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .recruitment-card {
-    width: 80%;
-    margin: 0 auto;
+  .recruitment-card-container {
+    gap: 20px 0;
+  }
+
+  .recruitment-card-text {
+    width: 100%;
   }
 }
 
@@ -541,6 +545,10 @@ table {
 
   .section-auther {
     font-size: 16px;
+  }
+
+  .recruitment-card-container {
+    grid-template-columns: 1fr;
   }
 
   .recruitment-table {
