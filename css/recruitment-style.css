@@ -320,8 +320,8 @@ table {
 }
 
 .recruitment-card:hover {
-  background-color: #fff;
-  color: #007b3d;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 
 .recruitment-card img {
@@ -331,7 +331,7 @@ table {
 
 .recruitment-card-text {
   width: 80%;
-  margin: 0 auto;
+  margin: 12px auto 0 auto;
 }
 
 .recruitment-card-text p {
@@ -528,7 +528,8 @@ table {
   }
 
   .recruitment-card-text {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -564,6 +565,11 @@ table {
 
   .recruitment-link a {
     font-size: 24px;
+  }
+
+  .recruitment-card-text {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .modal-content {
