@@ -4,6 +4,142 @@
   padding: 0;
 }
 
+/* footer */
+#footer {
+  background-color: #007d40;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.group h3 a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.group h3 img {
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info {
+  min-width: 280px;
+  margin-right: 200px;
+  margin-left: 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.brand h1 span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.tel {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 140px;
+  margin-left: 40px;
+}
+
+.group ul {
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
+}
+
+.group li {
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.group li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.group a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.group a:hover {
+  opacity: 0.8;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.icons i {
+  font-size: 1.4rem;
+}
+
 .container {
   width: 100%;
 }
@@ -45,7 +181,7 @@
 /* メインコンテンツ */
 .main-content {
   width: 75%;
-  margin: auto;
+  margin: auto auto 64px auto;
 }
 
 .section-title {
@@ -85,7 +221,7 @@
 /* 求人情報コンテナ */
 .recruitment-container {
   border: 3px solid #007b3d;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   padding: 20px;
   margin: 64px 0px;
 }
@@ -127,28 +263,32 @@ table {
   border-bottom: none;
 }
 
-.recruitment-link {
-  display: flex;
+.primary-button {
+  display: block;
   position: relative;
-  height: 105px;
-  border: 3px solid #007b3d;
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0px 10px 0px rgba(140, 187, 158, 0.5);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--main-green);
+  background-color: white;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--main-green);
+  border-radius: 100vmax;
+  box-shadow: 0 5px var(--shadow-green);
 }
 
-.recruitment-link a {
-  display: flex;
-  font-size: 36px;
-  height: 100%;
-  width: 100%;
-  color: #007b3d;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
+.primary-button::after {
+  position: absolute;
+  content: url(../img/primary-button_icon.png);
+  top: 25%;
+  right: 1rem;
+  height: 2rem;
+}
+.primary-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px var(--shadow-green);
 }
 
 .arrow {
@@ -175,10 +315,17 @@ table {
 }
 
 .recruitment-card {
-  border: 1px solid #000000;
-  background-color: #d9d9d9;
+  /* border: 2px solid #8cbb9e; */
+  background-color: #8cbb9e;
+  color: #fff;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recruitment-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 
 .recruitment-card img {
@@ -188,7 +335,7 @@ table {
 
 .recruitment-card-text {
   width: 80%;
-  margin: 0 auto;
+  margin: 12px auto 0 auto;
 }
 
 .recruitment-card-text p {
@@ -332,4 +479,141 @@ table {
 
 .modal-next {
   right: 200px;
+}
+
+@media (max-width: 1024px) {
+  .hero-text p {
+    font-size: 48px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .recruitment-table {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-arrow {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .modal-prev {
+    left: 10px;
+  }
+
+  .modal-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recruitment-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .recruitment-card-container {
+    gap: 20px 0;
+  }
+
+  .recruitment-card-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  .hero {
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .section-auther {
+    font-size: 16px;
+  }
+
+  .recruitment-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .recruitment-table {
+    font-size: 16px;
+  }
+
+  .recruitment-card-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    height: 90%;
+    overflow-y: scroll;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-year {
+    font-size: 24px;
+  }
+
+  .modal-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .modal-prev,
+  .modal-next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .modal-prev {
+    left: 10px;
+  }
+
+  .modal-next {
+    right: 10px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
 }

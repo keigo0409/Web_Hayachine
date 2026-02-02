@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>採用情報 | 早池峰設備工業</title>
+    <link rel="stylesheet" href="../css/header-style.css" />
     <link rel="stylesheet" href="../css/recruitment-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +14,29 @@
     />
   </head>
   <body>
-    <header></header>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-area">
+          <a href="./index.html">
+            <img src="../img/Ellipse 11.png" alt="会社ロゴ" class="logo" />
+            <div class="company-name">
+              株式会社<br /><span class="company-name2">早池峰設備工業</span>
+            </div>
+          </a>
+        </div>
+
+        <div id="menu-btn"><span></span></div>
+        <nav id="nav-menu" class="nav">
+          <ul>
+            <li><a href="./about-us.html">会社案内</a></li>
+            <li><a href="./construction.html">施工事例</a></li>
+            <li><a href="./faq.html">よくある質問</a></li>
+            <li class="active">採用情報</li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container">
       <!-- Hero -->
       <div class="hero">
@@ -48,8 +71,8 @@
               <tr>
                 <th>業務内容</th>
                 <td>
-                  <span class="line">一般住宅、ビル等の給排水設備工事、</span>
-                  <span class="line">浄化槽工事、水道施設工事、土木工事</span>
+                  <span class="line">一般住宅、ビル等の給排水設備工事、</span
+                  ><span class="line">浄化槽工事、水道施設工事、土木工事</span>
                 </td>
               </tr>
               <tr>
@@ -68,10 +91,7 @@
           </div>
         </div>
         <!-- 遷移ボタン -->
-        <div class="recruitment-link">
-          <a href="#">詳細情報はこちら</a>
-          <span class="arrow">→</span>
-        </div>
+        <a href="#" class="primary-button">詳細情報はこちら</a>
         <!-- セクション名-先輩社員の声 -->
         <h1 class="section-title">先輩社員の声</h1>
         <div class="recruitment-card-container">
@@ -80,6 +100,7 @@
             <div class="recruitment-card-text">
               <p>2024年入社(1年目)</p>
               <p class="center">K.T</p>
+              <p class="speech-bubble">入社前は未経験で不安でしたが…</p>
             </div>
           </div>
           <div class="recruitment-card">
@@ -87,6 +108,7 @@
             <div class="recruitment-card-text">
               <p>2023年入社(2年目)</p>
               <p class="center">R.S</p>
+              <p class="speech-bubble">少しずつ任される仕事が増えてきました…</p>
             </div>
           </div>
           <div class="recruitment-card">
@@ -94,6 +116,7 @@
             <div class="recruitment-card-text">
               <p>2022年入社(3年目)</p>
               <p class="center">S.Y</p>
+              <p class="speech-bubble">後輩指導を通じて自分も成長中です…</p>
             </div>
           </div>
           <div class="recruitment-card">
@@ -101,6 +124,7 @@
             <div class="recruitment-card-text">
               <p>2020年入社(5年目)</p>
               <p class="center">H.I</p>
+              <p class="speech-bubble">チームリーダーとして活躍しています…</p>
             </div>
           </div>
           <div class="recruitment-card">
@@ -108,6 +132,7 @@
             <div class="recruitment-card-text">
               <p>2017年入社(8年目)</p>
               <p class="center">N.K</p>
+              <p class="speech-bubble">大規模プロジェクトを任されています…</p>
             </div>
           </div>
           <div class="recruitment-card">
@@ -115,14 +140,12 @@
             <div class="recruitment-card-text">
               <p>2015年入社(10年目)</p>
               <p class="center">M.O</p>
+              <p class="speech-bubble">マネージャーとして部署を牽引中です…</p>
             </div>
           </div>
         </div>
         <!-- 遷移ボタン -->
-        <div class="recruitment-link">
-          <a href="#">詳細情報はこちら</a>
-          <span class="arrow">→</span>
-        </div>
+        <a href="#" class="primary-button">詳細情報はこちら</a>
       </div>
     </div>
     <!-- モーダル -->
@@ -149,7 +172,76 @@
       <button class="modal-arrow modal-prev">&#10094;</button>
       <button class="modal-arrow modal-next">&#10095;</button>
     </div>
-    <footer></footer>
+    <footer id="footer">
+      <div class="inner">
+        <section class="info">
+          <div class="brand">
+            <img src="../img/Ellipse 11.png" alt="ロゴ" />
+            <h1><span>株式会社</span>早池峰設備工業</h1>
+          </div>
+          <address>
+            〒020-0021<br />
+            岩手県盛岡市中央通3丁目12-2
+          </address>
+          <p class="tel">TEL : 019-600-0000</p>
+        </section>
+
+        <nav class="links">
+          <div class="group">
+            <h3>
+              <a href="../html/index.html">
+                <img src="../img/Vector.png" alt="TOP" /> TOP
+              </a>
+            </h3>
+            <ul>
+              <li><a href="#">事業内容</a></li>
+              <li><a href="#">対象地域</a></li>
+              <li><a href="#">当社の強み</a></li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3>
+              <a href="../html/about-us.html">
+                <img src="../img/Vector3.png" />企業案内
+              </a>
+            </h3>
+            <ul>
+              <li><a href="#">企業理念</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">沿革</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3>
+              <a href="../html/recruitment.html">
+                <img src="../img/Vector2.png" />採用情報
+              </a>
+            </h3>
+            <ul>
+              <li><a href="#">採用メッセージ</a></li>
+              <li><a href="#">募集要項</a></li>
+              <li><a href="#">先輩社員の声</a></li>
+            </ul>
+          </div>
+
+          <div class="group icons">
+            <a href="../html/brochure.html"
+              ><img src="../img/Vector4.png" />施工事例</a
+            >
+            <a href="../html/faq.html"
+              ><img src="../img/Vector5.png" />よくある質問</a
+            >
+            <a href="../html/contact.html"
+              ><img src="../img/Vector6.png" />お問い合わせ</a
+            >
+          </div>
+        </nav>
+      </div>
+    </footer>
     <script src="../js/rectuitment.js"></script>
+    <script src="../js/hamburger.js"></script>
   </body>
 </html>

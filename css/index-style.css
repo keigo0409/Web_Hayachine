@@ -20,13 +20,19 @@
   box-sizing: border-box;
 }
 
-html, body, main, div, span, h1, h2, h3, h4, p, ol, ul, li {
+/* html, body, main, div, span, h1, h2, h3, h4, p, ol, ul, li {
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 16px;
+} */
+
+* {
+  font-family: "Inter", regular;
+  margin: 0;
+  padding: 0;
 }
 
 .primary-button {
@@ -91,10 +97,16 @@ html {
   margin-bottom: 2rem;
 }
 
-.flex-gap1 {
+.flex-gap-1 {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 750px) {
+  .flex-gap-1 {
+    flex-direction: column;
+  }
 }
 
 .main-content {
@@ -106,6 +118,7 @@ html {
   height: 500px;
   width: 100%;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 #index-hero-img {
@@ -129,7 +142,7 @@ html {
 
 .index-hero-button {
   position: absolute;
-  bottom: 30%;
+  bottom: 3%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -171,6 +184,10 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
   padding: 1.5rem;
   padding-top: 0;
   background-color: var(--sub-green);
+}
+
+img {
+  max-width: 100%;
 }
 
 .subject-list {
@@ -245,13 +262,21 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 }
 
 .strength-container .speech-balloon {
+  display: flex;
+  background-color: transparent;
+  padding: 0;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.strength-container .speech-balloon p {
   background-color: var(--skyblue);
-  margin: 1.5rem 0;
   border-radius: 2rem;
   padding: 1.5rem;
   display:flex;
 	justify-content:center;
 	align-items:center;
+  margin-top: auto;
 }
 
 .strength-container img {
@@ -310,9 +335,9 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 .strength-grid4::after {
   position: absolute;
   content: '';
-  top: 95%;
-  right: 10%;
-  border-top: 30px solid var(--skyblue);
+  top: 100%;
+  right: 2rem;
+  border-top: 20px solid var(--skyblue);
   border-left: 30px solid transparent;
   width: 0;
   height: 0;
@@ -342,9 +367,9 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 .strength-grid8::after {
   position: absolute;
   content: '';
-  top: 95%;
-  left: 10%;
-  border-top: 30px solid var(--skyblue);
+  top: 100%;
+  left: 2rem;
+  border-top: 20px solid var(--skyblue);
   border-right: 30px solid transparent;
   width: 0;
   height: 0;
@@ -374,9 +399,9 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 .strength-grid12::after {
   position: absolute;
   content: '';
-  top: 95%;
-  left: 30%;
-  border-top: 30px solid var(--skyblue);
+  top: 100%;
+  left: 4rem;
+  border-top: 20px solid var(--skyblue);
   border-left: 30px solid transparent;
   width: 0;
   height: 0;
@@ -390,4 +415,33 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 .strength-grid14 {
   grid-area: 5 / 3 / 6 / 4;
   /* background-color: var(--check-sky); */
+}
+
+@media screen and (max-width: 750px) {
+  .strength-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .strength-container > * {
+    grid-area: auto;
+    width: 100%;
+  }
+
+  .strength-grid13,
+  .strength-grid14 {
+    display: none;
+  }
+
+  .strength-grid4::after,
+  .strength-grid8::after,
+  .strength-grid12::after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    left: calc(50% - 20px);
+    border: 20px solid transparent;
+    border-bottom: 30px solid var(--skyblue);
+    width: 0;
+  }
 }
