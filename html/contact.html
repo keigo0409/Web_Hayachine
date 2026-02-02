@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ | 早池峰設備工業</title>
-    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="stylesheet" href="../css/headerFooter-style.css">
     <link rel="stylesheet" href="../css/contact-style.css">
 </head>
 <body>
@@ -26,6 +26,7 @@
                     <li><a href="./faq.html">よくある質問</a></li>
                     <li><a href="./recruitment.html">採用情報</a></li>
                     <li  class="active">お問い合わせ</li>
+                    <li><a href="./brochure.html">パンフレット請求</a></li>
                 </ul>
             </nav>
 
@@ -33,50 +34,54 @@
     </header>
 
     <main>
-      <div class="hero">
-        <img src="../img/contact_hero.jpg" alt="便箋を持つ手">
-        <div class="hero-text">
-            <p>お問い合わせ</p>
+        <div class="hero">
+            <img src="../img/contact_hero.jpg" alt="便箋を持つ手">
+            <div class="hero-text">
+                <p>お問い合わせ</p>
+            </div>
         </div>
-      </div>
-      <div class="main-content">
-        <section class="margin-bottom-2rem">
-          <h1 class="section-heading">お問い合わせ</h1>
-          <form id="contact-form">
-            <div class="form-item">
-              <label for="name">お名前</label>
-              <input type="text" name="name" placeholder="例：タナカタロウ" >
-            </div>
-            <div class="form-item">
-              <label for="contact-info">電話番号 または メールアドレス<br>（折り返しご連絡差し上げるのに必要です。）</label>
-              <input type="text" name="contact-info" placeholder="例：080-0000-0000">
-            </div>
-            <div class="form-item">
-              <label for="genre">お問い合わせ種別</label>
-              <select name="genre">
-                <option value="依頼">依頼</option>
-                <option value="相談">相談</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-            <div class="form-item">
-              <label for="describe">説明<br>（お問い合わせ内容を簡潔にお書きください。）</label>
-              <textarea name="describe" rows="10" placeholder="例：本格的な冬になる前に、水道管の状態確認をしたい。必要ならば修理も依頼したい。"></textarea>
-            </div>
-            <div class="form-item">
-              <label for="reference">参考写真<br>（実際の現場の状態を確認するため、もし可能であればご送付ください。）</label>
-              <input type="file" name="reference">
-            </div>
-            <button type="submit">送信</button>
-          </form>
-        </section>
-      </div>
+        <div class="main-content">
+            <section class="margin-bottom-4rem">
+                <h1 class="section-heading">お問い合わせ</h1>
+                <form id="contact-form">
+                    <div class="form-item">
+                        <label for="name">お名前</label>
+                        <input type="text" name="name" placeholder="例：タナカタロウ" >
+                    </div>
+                    <div class="form-item">
+                        <label for="contact-info">電話番号 または メールアドレス<br>（折り返しご連絡差し上げるのに必要です。）</label>
+                        <input type="text" name="contact-info" placeholder="例：080-0000-0000">
+                    </div>
+                    <div class="form-item">
+                        <label for="genre">お問い合わせ種別</label>
+                        <select name="genre">
+                            <option value="ご依頼">ご依頼</option>
+                            <option value="ご相談">ご相談</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="describe">お問い合わせ内容</label>
+                        <textarea name="describe" rows="10" placeholder="例：本格的な冬になる前に、水道管の状態確認をしたい。必要ならば修理も依頼したい。"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <label for="reference">参考写真<br>（実際の現場の状態を確認するため、もし可能であればご送付ください。）</label>
+                        <div class="file-input-wrap">
+                            <input type="file" name="input" id="input" accept="image/*" onchange="showPreview(event);">
+                            <div class="image-preview">
+                                <img src="" alt="" id="figureImage">
+                                <button type="button" class="remove-btn" onclick="removePreview()">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">送信</button>
+                </form>
+            </section>
+        </div>
     </main>
 
-    
     <footer id="footer">
         <div class="inner">
-
             <section class="info">
                 <div class="brand">
                     <img src="../img/Ellipse 11.png" alt="ロゴ">
@@ -92,55 +97,54 @@
             <nav class="links">
                 <div class="group">
                     <h3>
-                        <a href="../html/index.html">
+                        <a href="index.html">
                             <img src="../img/Vector.png" alt="TOP"> TOP
                         </a>
                     </h3>
                     <ul>
-                        <li><a href="#">事業内容</a></li>
-                        <li><a href="#">対象地域</a></li>
-                        <li><a href="#">当社の強み</a></li>
+                        <li><a href="index.html#main-service">主なサービス</a></li>
+                        <li><a href="index.html#subject-area">対象地域</a></li>
+                        <li><a href="index.html#our-strength">当社の強み</a></li>
                     </ul>
                 </div>
 
                 <div class="group">
                     <h3>
-                        <a href="../html/about-us.html">
+                        <a href="about-us.html">
                             <img src="../img/Vector3.png">企業案内
                         </a>
                     </h3>
                     <ul>
-                        <li><a href="#">企業理念</a></li>
-                        <li><a href="#">会社概要</a></li>
-                        <li><a href="#">沿革</a></li>
-                        <li><a href="#">アクセス</a></li>
+                        <li><a href="about-us.html#philosophy">企業理念</a></li>
+                        <li><a href="about-us.html#profile">会社概要</a></li>
+                        <li><a href="about-us.html#history">沿革</a></li>
+                        <li><a href="about-us.html#access">アクセス</a></li>
                     </ul>
                 </div>
 
                 <div class="group">
                     <h3>
-                        <a href="../html/recruitment.html">
+                        <a href="recruitment.html">
                             <img src="../img/Vector2.png">採用情報
                         </a>
                     </h3>
                     <ul>
-                        <li><a href="#">採用メッセージ</a></li>
-                        <li><a href="#">募集要項</a></li>
-                        <li><a href="#">先輩社員の声</a></li>
+                        <li><a href="recruitment.html#message">採用メッセージ</a></li>
+                        <li><a href="recruitment.html#about">募集要項</a></li>
+                        <li><a href="recruitment.html#employee">先輩社員の声</a></li>
                     </ul>
                 </div>
 
                 <div class="group icons">
-                    <a href="../html/brochure.html"><img src="../img/Vector4.png">施工事例</a>
-                    <a href="../html/faq.html"><img src="../img/Vector5.png">よくある質問</a>
-                    <a href="../html/contact.html"><img src="../img/Vector6.png">お問い合わせ</a>
+                    <a href="construction.html"><img src="../img/Vector4.png">施工事例</a>
+                    <a href="faq.html"><img src="../img/Vector5.png">よくある質問</a>
+                    <a href="contact.html"><img src="../img/Vector6.png">お問い合わせ</a>
                 </div>
             </nav>
-
         </div>
-      
     </footer>
 
     <script src="../js/hamburger.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

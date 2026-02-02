@@ -1,14 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>企業案内</title>
+    <title>会社案内</title>
+    <link rel="stylesheet" href="../css/headerFooter-style.css" />
     <link rel="stylesheet" href="../css/about-style.css" />
-    <link rel="stylesheet" href="../css/header-style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="site-header">
       <div class="header-inner">
         <div class="logo-area">
@@ -17,7 +18,19 @@
             <div class="company-name">
               株式会社<br /><span class="company-name2">早池峰設備工業</span>
             </div>
-          </a>
+
+            <div id="menu-btn"><span></span></div>
+            <nav id="nav-menu" class="nav">
+                <ul>
+                    <li class="active">会社案内</li>
+                    <li><a href="./construction.html">施工事例</a></li>
+                    <li><a href="./faq.html">よくある質問</a></li>
+                    <li><a href="./recruitment.html">採用情報</a></li>
+                    <li><a href="./contact.html">お問い合わせ</a></li>
+                    <li><a href="./brochure.html">パンフレット請求</a></li>
+                </ul>
+            </nav>
+
         </div>
 
         <div id="menu-btn"><span></span></div>
@@ -40,7 +53,7 @@
         </div>
       </div>
       <div class="all-content">
-        <div class="Corporate philosophy">
+        <div class="Corporate philosophy" id="philosophy">
           <h1 class="section-heading">企業理念</h1>
           <h2 class="philosophy-title">
             <span>「住環境の設備を通して 社会に貢献する」</span>
@@ -175,73 +188,67 @@
     </main>
 
     <footer id="footer">
-      <div class="inner">
-        <section class="info">
-          <div class="brand">
-            <img src="../img/Ellipse 11.png" alt="ロゴ" />
-            <h1><span>株式会社</span>早池峰設備工業</h1>
-          </div>
-          <address>
-            〒020-0021<br />
-            岩手県盛岡市中央通3丁目12-2
-          </address>
-          <p class="tel">TEL : 019-600-0000</p>
-        </section>
+        <div class="inner">
+            <section class="info">
+                <div class="brand">
+                    <img src="../img/Ellipse 11.png" alt="ロゴ">
+                    <h1><span>株式会社</span>早池峰設備工業</h1>
+                </div>
+                <address>
+                    〒020-0021<br>
+                    岩手県盛岡市中央通3丁目12-2
+                </address>
+                <p class="tel">TEL : 019-600-0000</p>
+            </section>
 
-        <nav class="links">
-          <div class="group">
-            <h3>
-              <a href="../html/index.html">
-                <img src="../img/Vector.png" alt="TOP" /> TOP
-              </a>
-            </h3>
-            <ul>
-              <li><a href="#">事業内容</a></li>
-              <li><a href="#">対象地域</a></li>
-              <li><a href="#">当社の強み</a></li>
-            </ul>
-          </div>
+            <nav class="links">
+                <div class="group">
+                    <h3>
+                        <a href="index.html">
+                            <img src="../img/Vector.png" alt="TOP"> TOP
+                        </a>
+                    </h3>
+                    <ul>
+                        <li><a href="index.html#main-service">主なサービス</a></li>
+                        <li><a href="index.html#subject-area">対象地域</a></li>
+                        <li><a href="index.html#our-strength">当社の強み</a></li>
+                    </ul>
+                </div>
 
-          <div class="group">
-            <h3>
-              <a href="../html/about-us.html">
-                <img src="../img/Vector3.png" />企業案内
-              </a>
-            </h3>
-            <ul>
-              <li><a href="#">企業理念</a></li>
-              <li><a href="#">会社概要</a></li>
-              <li><a href="#">沿革</a></li>
-              <li><a href="#">アクセス</a></li>
-            </ul>
-          </div>
+                <div class="group">
+                    <h3>
+                        <a href="about-us.html">
+                            <img src="../img/Vector3.png">企業案内
+                        </a>
+                    </h3>
+                    <ul>
+                        <li><a href="about-us.html#philosophy">企業理念</a></li>
+                        <li><a href="about-us.html#profile">会社概要</a></li>
+                        <li><a href="about-us.html#history">沿革</a></li>
+                        <li><a href="about-us.html#access">アクセス</a></li>
+                    </ul>
+                </div>
 
-          <div class="group">
-            <h3>
-              <a href="../html/recruitment.html">
-                <img src="../img/Vector2.png" />採用情報
-              </a>
-            </h3>
-            <ul>
-              <li><a href="#">採用メッセージ</a></li>
-              <li><a href="#">募集要項</a></li>
-              <li><a href="#">先輩社員の声</a></li>
-            </ul>
-          </div>
+                <div class="group">
+                    <h3>
+                        <a href="recruitment.html">
+                            <img src="../img/Vector2.png">採用情報
+                        </a>
+                    </h3>
+                    <ul>
+                        <li><a href="recruitment.html#message">採用メッセージ</a></li>
+                        <li><a href="recruitment.html#about">募集要項</a></li>
+                        <li><a href="recruitment.html#employee">先輩社員の声</a></li>
+                    </ul>
+                </div>
 
-          <div class="group icons">
-            <a href="../html/brochure.html"
-              ><img src="../img/Vector4.png" />施工事例</a
-            >
-            <a href="../html/faq.html"
-              ><img src="../img/Vector5.png" />よくある質問</a
-            >
-            <a href="../html/contact.html"
-              ><img src="../img/Vector6.png" />お問い合わせ</a
-            >
-          </div>
-        </nav>
-      </div>
+                <div class="group icons">
+                    <a href="construction.html"><img src="../img/Vector4.png">施工事例</a>
+                    <a href="faq.html"><img src="../img/Vector5.png">よくある質問</a>
+                    <a href="contact.html"><img src="../img/Vector6.png">お問い合わせ</a>
+                </div>
+            </nav>
+        </div>
     </footer>
 
     <script src="../js/hamburger.js"></script>

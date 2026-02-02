@@ -9,7 +9,7 @@
   --check-orange: #ff9d00;
 
   --main-green: #007b3d;
-  --sub-green: #8cbb9e;
+    --sub-green: #b6dec5;
   --shadow-green: #c5ddce;
   --skyblue: #d4edf9;
 }
@@ -18,21 +18,33 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 /* header */
 .site-header {
   background-color: #007B3D;
   height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid white;
 }
 
 .header-inner {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-inner .nav ul li {
+  align-items: center;
 }
 
 .logo-area a {
@@ -68,10 +80,17 @@
   gap: 28px;
 }
 
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav .active {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  border-bottom: 2px solid white;
 }
 
 .nav a {
@@ -157,7 +176,7 @@
 
   #nav-menu {
     height: 100%;
-    width: 250px;
+    padding: 0 3rem;
     background-color: var(--sub-green);
     color: black;
     border-left: 1px solid black;
@@ -189,6 +208,7 @@
 
   .nav .active {
     color: black;
+    border-bottom: 2px solid black;
   }
 
   #nav-menu .current-page {
