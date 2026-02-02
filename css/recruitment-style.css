@@ -218,7 +218,7 @@ address {
 /* 求人情報コンテナ */
 .recruitment-container {
   border: 3px solid #007b3d;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   padding: 20px;
   margin: 64px 0px;
 }
@@ -260,28 +260,32 @@ table {
   border-bottom: none;
 }
 
-.recruitment-link {
-  display: flex;
+.primary-button {
+  display: block;
   position: relative;
-  height: 105px;
-  border: 3px solid #007b3d;
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0px 10px 0px rgba(140, 187, 158, 0.5);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--main-green);
+  background-color: white;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--main-green);
+  border-radius: 100vmax;
+  box-shadow: 0 5px var(--shadow-green);
 }
 
-.recruitment-link a {
-  display: flex;
-  font-size: 36px;
-  height: 100%;
-  width: 100%;
-  color: #007b3d;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
+.primary-button::after {
+  position: absolute;
+  content: url(../img/primary-button_icon.png);
+  top: 25%;
+  right: 1rem;
+  height: 2rem;
+}
+.primary-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px var(--shadow-green);
 }
 
 .arrow {
@@ -308,10 +312,17 @@ table {
 }
 
 .recruitment-card {
-  border: 1px solid #000000;
-  background-color: #d9d9d9;
+  /* border: 2px solid #8cbb9e; */
+  background-color: #8cbb9e;
+  color: #fff;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recruitment-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
 
 .recruitment-card img {
@@ -321,7 +332,7 @@ table {
 
 .recruitment-card-text {
   width: 80%;
-  margin: 0 auto;
+  margin: 12px auto 0 auto;
 }
 
 .recruitment-card-text p {
@@ -465,4 +476,141 @@ table {
 
 .modal-next {
   right: 200px;
+}
+
+@media (max-width: 1024px) {
+  .hero-text p {
+    font-size: 48px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .recruitment-table {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-arrow {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .modal-prev {
+    left: 10px;
+  }
+
+  .modal-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recruitment-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .recruitment-card-container {
+    gap: 20px 0;
+  }
+
+  .recruitment-card-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  .hero {
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .section-auther {
+    font-size: 16px;
+  }
+
+  .recruitment-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .recruitment-table {
+    font-size: 16px;
+  }
+
+  .recruitment-card-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    height: 90%;
+    overflow-y: scroll;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-year {
+    font-size: 24px;
+  }
+
+  .modal-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .modal-prev,
+  .modal-next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .modal-prev {
+    left: 10px;
+  }
+
+  .modal-next {
+    right: 10px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
 }
