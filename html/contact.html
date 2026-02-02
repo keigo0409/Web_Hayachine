@@ -55,20 +55,26 @@
                     <div class="form-item">
                         <label for="genre">お問い合わせ種別</label>
                         <select name="genre">
-                            <option value="依頼">依頼</option>
-                            <option value="相談">相談</option>
+                            <option value="ご依頼">ご依頼</option>
+                            <option value="ご相談">ご相談</option>
                             <option value="その他">その他</option>
                         </select>
                     </div>
                     <div class="form-item">
-                        <label for="describe">説明<br>（お問い合わせ内容を簡潔にお書きください。）</label>
+                        <label for="describe">お問い合わせ内容</label>
                         <textarea name="describe" rows="10" placeholder="例：本格的な冬になる前に、水道管の状態確認をしたい。必要ならば修理も依頼したい。"></textarea>
                     </div>
                     <div class="form-item">
                         <label for="reference">参考写真<br>（実際の現場の状態を確認するため、もし可能であればご送付ください。）</label>
-                        <input type="file" name="reference">
+                        <div class="file-input-wrap">
+                            <input type="file" name="input" id="input" accept="image/*" onchange="showPreview(event);">
+                            <div class="image-preview">
+                                <img src="" alt="" id="figureImage">
+                                <button type="button" class="remove-btn" onclick="removePreview()">×</button>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit">送信</button>
+                    <button type="submit" class="submit-button">送信</button>
                 </form>
             </section>
         </div>
@@ -138,9 +144,9 @@
             </nav>
 
         </div>
-      
     </footer>
 
     <script src="../js/hamburger.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
