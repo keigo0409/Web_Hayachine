@@ -98,6 +98,10 @@ html {
   margin-bottom: 2rem;
 }
 
+.margin-bottom-4rem {
+  margin-bottom: 4rem;
+}
+
 .flex-gap-1 {
   display: flex;
   gap: 1rem;
