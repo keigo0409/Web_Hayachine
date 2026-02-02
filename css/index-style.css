@@ -164,7 +164,19 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
 }
 
 .card-photo-container {
+  display: flex;
+  gap: 1rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .card-photo-container {
+    flex-direction: column;
+  }
+}
+
+.card-photo {
+  background-color: var(--sub-green);
 }
 
 .card-photo img {
@@ -178,17 +190,19 @@ background-image: linear-gradient(90deg, #2474B2FF, #00000000 50%);  position: a
   padding: 1.5rem;
   font-size: 1.5rem;
   text-align: center;
-  background-color: var(--sub-green);
 }
 
 .card-photo p {
   padding: 1.5rem;
   padding-top: 0;
-  background-color: var(--sub-green);
 }
 
 img {
   max-width: 100%;
+}
+
+.subject-area-img {
+  width: 350px;
 }
 
 .subject-list {
@@ -201,6 +215,7 @@ img {
 }
 
 .subject-list h3 {
+  font-size: 1.4rem;
   text-decoration: underline;
 }
 
@@ -208,11 +223,26 @@ img {
   margin-top: 0.5rem;
   margin-left: 2.5rem;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .subject-list ul li{
-  display: flex;
+  font-size: 1.2rem;
   align-items: center;
+  width: 33%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .subject-list ul {
+    flex-direction: column;
+  }
+
+  .subject-list ul li{
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .subject-list ul li::before{
@@ -277,7 +307,6 @@ img {
   display:flex;
 	justify-content:center;
 	align-items:center;
-  margin-top: auto;
 }
 
 .strength-container img {
@@ -418,7 +447,7 @@ img {
   /* background-color: var(--check-sky); */
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .strength-container {
     display: flex;
     flex-direction: column;
