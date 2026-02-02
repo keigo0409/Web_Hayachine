@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>パンフレット請求 | 早池峰設備工業</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../css/headerFooter-style.css">
     <link rel="stylesheet" href="../css/brochure-style.css">
 </head>
@@ -42,18 +43,43 @@
         </div>
         <div class="main-content">
             <section class="margin-bottom-2rem">
-            <h1 class="section-heading">パンフレット請求</h1>
-            <form id="contact-form">
-                <div class="form-item">
-                    <label for="name">お名前</label>
-                    <input type="text" name="name" placeholder="例：タナカタロウ" >
+                <h1 class="section-heading">ダウンロード</h1>
+                <div class="text-center">
+                    <a href="../file/brochure.pdf" download="会社案内パンフレット" class="download-button">
+                        <span>
+                            <span class="material-symbols-outlined">download</span>パンフレットダウンロード
+                        </span>
+                    </a>
                 </div>
-                <div class="form-item">
-                    <label for="mail-address">確認用メールアドレス<br>（配送先住所の確認のために必要です。）</label>
-                    <input type="email" name="mail-address" placeholder="例：example@sample.com">
+            </section>
+
+            <section class="margin-bottom-2rem">
+                <h1 class="section-heading">パンフレット請求</h1>
+                <button class="brochure-accordion-button">
+                    <span class="brochure-accordion-icon-question">?</span>
+                    <p class="brochure-accordion-button-text">パンフレット送付までの流れ</p>
+                </button>
+                <div class="brochure-accordion-content">
+                    <span class="brochure-accordion-content-inner">
+                        <ol class="brochure-accordion-ol">
+                            <li>以下のフォームにお名前とメールアドレスをご入力ください。</li>
+                            <li>ご入力いただいたメールアドレス宛に確認メールをお送りします。パンフレットの送付先住所とご希望部数をご返信ください。</li>
+                            <li>ご返信確認後、原則として3営業日以内にパンフレットを発送いたします。なお、在庫状況・ご希望部数・お届け先の地域によっては、お届けまでにお時間を頂く場合がございます。あらかじめご了承ください。</li>
+                        </ol>
+                    </span>
                 </div>
-                <button type="submit">送信</button>
-            </form>
+
+                <form id="brochure-form">
+                    <div class="form-item">
+                        <label for="name">お名前</label>
+                        <input type="text" name="name" placeholder="例：タナカタロウ" >
+                    </div>
+                    <div class="form-item">
+                        <label for="mail-address">メールアドレス</label>
+                        <input type="email" name="mail-address" placeholder="例：example@sample.com">
+                    </div>
+                    <button type="submit">送信</button>
+                </form>
             </section>
         </div>
     </main>
@@ -125,5 +151,6 @@
     </footer>
 
     <script src="../js/hamburger.js"></script>
+    <script src="../js/brochure.js"></script>
 </body>
 </html>
