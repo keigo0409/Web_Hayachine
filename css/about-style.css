@@ -34,8 +34,7 @@
 .hero-text p {
   font-size: 64px;
   font-weight: bold;
-  text-shadow: 3px 3px 0 #ffffff, -3px 3px 0 #ffffff, 3px -3px 0 #ffffff,
-    -3px -3px 0 #ffffff;
+  text-shadow: 3px 3px 5px #ffffff, -3px 3px 5px #ffffff, 3px -3px 5px #ffffff, -3px -3px 5px #ffffff;
 }
 
 .all-content {

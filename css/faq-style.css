@@ -11,7 +11,7 @@
   --check-orange: #ff9d00;
 
   --main-green: #007b3d;
-  --sub-green: #8cbb9e;
+  --sub-green: #b6dec5;
   --shadow-green: #c5ddce;
   --super-light-green: #ebf6e8;
   --skyblue: #d4edf9;
@@ -64,8 +64,7 @@ html {
 .hero-text p {
   font-size: 64px;
   font-weight: bold;
-  text-shadow: 3px 3px 0 #ffffff, -3px 3px 0 #ffffff, 3px -3px 0 #ffffff,
-    -3px -3px 0 #ffffff;
+  text-shadow: 3px 3px 5px #ffffff, -3px 3px 5px #ffffff, 3px -3px 5px #ffffff, -3px -3px 5px #ffffff;
 }
 
 .section-heading {
