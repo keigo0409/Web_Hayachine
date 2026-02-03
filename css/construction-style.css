@@ -311,7 +311,8 @@ hr {
 }
 
 .primary-button {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
   margin-bottom: 0.5rem;
   padding: 1rem;
@@ -326,17 +327,17 @@ hr {
   box-shadow: 0 5px var(--shadow-green);
 }
 
-.primary-button::after {
-  position: absolute;
-  content: url(../img/primary-button_icon.png);
-  top: 25%;
-  right: 1rem;
-  height: 2rem;
-}
-
 .primary-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px var(--shadow-green);
+}
+
+.primary-button span {
+  margin: 0 auto;
+}
+
+.primary-button img {
+  object-fit: contain;
 }
 
 .arrow {
