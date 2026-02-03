@@ -5,46 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>会社案内</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../css/headerFooter-style.css" />
     <link rel="stylesheet" href="../css/about-style.css" />
 </head>
 
 <body>
     <header class="site-header">
-      <div class="header-inner">
+        <div class="header-inner">
+
         <div class="logo-area">
-          <a href="./index.html">
-            <img src="../img/Ellipse 11.png" alt="会社ロゴ" class="logo" />
-            <div class="company-name">
-              株式会社<br /><span class="company-name2">早池峰設備工業</span>
-            </div>
-
-            <div id="menu-btn"><span></span></div>
-            <nav id="nav-menu" class="nav">
-                <ul>
-                    <li class="active">会社案内</li>
-                    <li><a href="./construction.html">施工事例</a></li>
-                    <li><a href="./faq.html">よくある質問</a></li>
-                    <li><a href="./recruitment.html">採用情報</a></li>
-                    <li><a href="./contact.html">お問い合わせ</a></li>
-                    <li><a href="./brochure.html">パンフレット請求</a></li>
-                </ul>
-            </nav>
-
+            <a href="./index.html">
+                <img src="../img/Ellipse 11.png" alt="会社ロゴ" class="logo">
+                <div class="company-name">株式会社<br><span  class="company-name2">早池峰設備工業</span></div>
+            </a>
         </div>
 
         <div id="menu-btn"><span></span></div>
         <nav id="nav-menu" class="nav">
-          <ul>
-            <li class="active">会社案内</li>
-            <li><a href="./construction.html">施工事例</a></li>
-            <li><a href="./faq.html">よくある質問</a></li>
-            <li><a href="./recruitment.html">採用情報</a></li>
-            <li><a href="./contact.html">お問い合わせ</a></li>
-          </ul>
+            <ul>
+                <li class="active">会社案内</li>
+                <li><a href="./construction.html">施工事例</a></li>
+                <li><a href="./faq.html">よくある質問</a></li>
+                <li><a href="./recruitment.html">採用情報</a></li>
+                <li><a href="./contact.html">お問い合わせ</a></li>
+                <li><a href="./brochure.html">パンフレット請求</a></li>
+            </ul>
         </nav>
-      </div>
+
+        </div>
     </header>
+
     <main>
       <div class="hero">
         <img src="../img/brochure_hero.png" alt="会社案内画像" />
@@ -128,7 +119,7 @@
             </table>
           </div>
         </div>
-        <h1 class="section-heading">沿革</h1>
+        <h1 class="section-heading" id="history">沿革</h1>
         <ul class="history">
           <li>
             <span class="history-date">昭和50年7月</span>
@@ -164,7 +155,7 @@
           </li>
         </ul>
 
-        <h1 class="section-heading">アクセス</h1>
+        <h1 class="section-heading" id="access">アクセス</h1>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.206340727779!2d141.13918177439078!3d39.70594589859582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857637537b97ef%3A0xd2c10c797f35bb2!2z44CSMDIwLTAwMjEg5bKp5omL55yM55ub5bKh5biC5Lit5aSu6YCa77yT5LiB55uu77yR77yS4oiS77yS!5e1!3m2!1sja!2sjp!4v1765761855428!5m2!1sja!2sjp"
           style="border: 0"
@@ -180,9 +171,10 @@
 
         <div class="Contact">
           <p class="request">当社は現在人材募集中です</p>
-          <a href="../html/recruitment.html" class="primary-button"
-            >採用情報はこちら</a
-          >
+          <a href="recruitment.html" class="primary-button">
+              <span>採用情報はこちらから</span>
+              <img src="../img/primary-button_icon.png">
+          </a>
         </div>
       </div>
     </main>
@@ -204,9 +196,7 @@
             <nav class="links">
                 <div class="group">
                     <h3>
-                        <a href="index.html">
-                            <img src="../img/Vector.png" alt="TOP"> TOP
-                        </a>
+                        <a href="index.html"><span class="material-symbols-outlined">home</span> TOP</a>
                     </h3>
                     <ul>
                         <li><a href="index.html#main-service">主なサービス</a></li>
@@ -217,9 +207,7 @@
 
                 <div class="group">
                     <h3>
-                        <a href="about-us.html">
-                            <img src="../img/Vector3.png">企業案内
-                        </a>
+                        <a href="about-us.html"><span class="material-symbols-outlined">apartment</span>企業案内</a>
                     </h3>
                     <ul>
                         <li><a href="about-us.html#philosophy">企業理念</a></li>
@@ -231,9 +219,7 @@
 
                 <div class="group">
                     <h3>
-                        <a href="recruitment.html">
-                            <img src="../img/Vector2.png">採用情報
-                        </a>
+                        <a href="recruitment.html"><span class="material-symbols-outlined">account_box</span>採用情報</a>
                     </h3>
                     <ul>
                         <li><a href="recruitment.html#message">採用メッセージ</a></li>
@@ -243,14 +229,13 @@
                 </div>
 
                 <div class="group icons">
-                    <a href="construction.html"><img src="../img/Vector4.png">施工事例</a>
-                    <a href="faq.html"><img src="../img/Vector5.png">よくある質問</a>
-                    <a href="contact.html"><img src="../img/Vector6.png">お問い合わせ</a>
+                    <a href="construction.html"><span class="material-symbols-outlined">handyman</span>施工事例</a>
+                    <a href="faq.html"><span class="material-symbols-outlined">help</span>よくある質問</a>
+                    <a href="contact.html"><span class="material-symbols-outlined">mail</span>お問い合わせ</a>
                 </div>
             </nav>
         </div>
     </footer>
-
     <script src="../js/hamburger.js"></script>
   </body>
 </html>
