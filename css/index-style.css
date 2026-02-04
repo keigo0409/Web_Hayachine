@@ -131,13 +131,17 @@ html {
 
 #index-text {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
   color: white;
   text-shadow:1px 1px 0 black, -1px -1px 0 black,
               -1px 1px 0 black, 1px -1px 0 black,
               0 1px 0 black,  0 -1px 0 black,
               -1px 0 0 black, 1px 0 0 black;
+}
+
+#index-text h1 {
+  font-size: 3rem;
 }
 
 .index-hero-button {
@@ -148,10 +152,12 @@ html {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   width: 80%;
+  box-shadow: 0 5px var(--main-green);
 }
 
 .index-hero-button:hover {
   transform: translate(-50%, -50%) translateY(-5px);
+  box-shadow: 0 10px var(--main-green);
 }
 
 .img-gradation {
